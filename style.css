@@ -1,0 +1,293 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: arial,helvetica,sans-serif;
+}
+a{
+	text-decoration: none;
+}
+.hero{
+	height: 100vh;
+	width: 100vw;
+	background: yellowgreen;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 100px;
+}
+
+.logo{
+	font-size: 30px;
+	font-weight: bold;
+	color: black;
+	cursor: pointer;
+}
+
+.logo::first-letter{
+	font-size: 40px;
+	border: 2px solid black;
+	border-right: transparent;
+	padding-left: 5px;
+	color: red;
+}
+
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	padding: 10px 20px;
+}
+
+nav ul li a{
+	color: black;
+	position: relative;
+	padding: 5px 0;
+	font-weight: bold;
+}
+
+nav ul li a:hover{
+	color:tomato ;
+}
+
+nav ul li a::after{
+	content: "";
+	bottom: 0;
+	left: 0;
+	width: 0 ;
+	position: absolute;
+	height: 3px;
+	background: whitesmoke;
+	transition: .3s;
+}
+
+nav ul li a:hover::after{
+	width: 100%;
+}
+
+.btn{
+	color: black;
+	font-size: 16px;
+	text-transform: uppercase;
+	background: tomato;
+	padding: 10px 30px;
+	border-radius: 500px;
+	display: inline-block;
+	font-weight: 500px; 
+	transition: all .4s ease-in-out;
+	border: 2px solid gold;
+}
+
+.btn:hover{
+	background: red;
+	color: red;
+}
+
+.detail{
+	position: absolute;
+	top: 35%;
+	left: 8%;
+}
+
+.detail h1{
+	color: black;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 70px;
+}
+
+.detail h1 span{
+	color: red;
+}
+
+.detail h3{
+	color: 	black;
+	font-size: 15px;
+	font-weight: 200;
+	list-style: 40px;	
+}
+
+.detail p{
+	color: black;
+	font-size: 18px;
+	margin-top: 25px;
+	margin-bottom: 30px;
+}
+
+.image img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.image{
+	width: 30%;
+	height: 80%;
+	position: absolute;
+	bottom: 0;
+	right: 200px;
+}
+
+.about{
+	width:100% ;
+	padding: 100px 0px;
+	background-color: yellowgreen;
+}
+.about img{
+	height: auto;
+	width: 420px;
+}	
+.about-text{
+	width: 550px;
+}
+.main{
+	width:1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.about-text h2{
+	color: red;
+	font-size: 65px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+
+.about-text h4{
+	color: black;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+}
+.about-text p{
+	color: black;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+
+.about-text p span{
+	color: red;
+}
+
+button{
+	background: red;
+	color: black;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s;
+}
+button:hover{
+	background-color: whitesmoke;
+	border: 2px solid tomato;
+	cursor: pointer;
+}
+
+.pictures img{
+	 display: block;
+ 	 margin-left:auto;
+ 	 margin-right:auto;
+ 	 width: 100%;
+}
+
+.images{
+	width: 50%;
+	height: 80%;
+	position: absolute;
+	bottom: 0;
+	right: 200px;
+}
+
+.services{
+	width:100%;
+	padding: 100px 0px;
+	background-color:yellowgreen;
+}
+
+.services img{
+	height:auto;
+	width:490px;
+}
+
+.serve{
+	width:1200px;
+	max-width: 100%;
+	margin: 10 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.services-text{
+	width: 550px;
+}
+
+.main{
+	width:1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.services-text h2{
+	color: red;
+	font-size: 70px;
+	text-transform: capitalize;
+	margin-left:100px;
+	right: 200px;
+}
+
+.services-text p{
+	color: black;
+	font-size: 20px;
+	margin-top: 25px;
+	margin-left:150px;
+}
+
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container{
+  border-radius: 5px;
+  background-color:yellowgreen;
+  padding: 20px;
+}
+
+.container h2{
+	color: red;
+	font-size: 65px;
+	text-transform: capitalize;
+	margin-left: 150px;
+}
